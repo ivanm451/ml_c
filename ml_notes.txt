@@ -24,4 +24,11 @@ But computer is discrete. Well, we can use finite difference approach to impleme
 We program our cost function as its own function in the code and then we run it in for loop
 The output of our cost function can then be used as function for finite difference which gently nudges us to a better guess.
 
+We can have many inputs and parameters for our model.
 
+Simple paramater model: y = x*w
+More complex version: y = x1*w1 + x2*w2 + x3*w3 + ... + b
+
+Where b is our bias. In general, having a bias in our model can help improve performance
+Since this is another parameter, we can apply the finite difference method to it as well to optimize our function
+LO AND BEHOLD, WE NOW HAVE GRADIENT DESCENT!
