@@ -1,0 +1,27 @@
+
+05/20/2023
+Here is what we did for our first machine learning model
+
+We have a data set like this:
+0 0 
+1 2
+2 4
+3 6
+4 8
+
+Then we build our model: y = x*w, so that it can predict any element of the second value.
+In a real world usage, we wouldn't know what the result may be, but in this simple example we do so it helps.
+
+w is our parameter. models can have many. 
+x is our input to the model. the first column of values in our data set. 
+d is the distance from our output to our actual value in second column of data set.
+We use seeding (random number generation) to create random initial guess. 
+
+By introducing cost function we can make our guesses better. 
+If we think of our model as a function we can use derivatives to find the minima where d = 0 meaning we guessed correctly. 
+But computer is discrete. Well, we can use finite difference approach to implement limit def of derivative. 
+
+We program our cost function as its own function in the code and then we run it in for loop
+The output of our cost function can then be used as function for finite difference which gently nudges us to a better guess.
+
+
