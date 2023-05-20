@@ -32,3 +32,19 @@ More complex version: y = x1*w1 + x2*w2 + x3*w3 + ... + b
 Where b is our bias. In general, having a bias in our model can help improve performance
 Since this is another parameter, we can apply the finite difference method to it as well to optimize our function
 LO AND BEHOLD, WE NOW HAVE GRADIENT DESCENT!
+
+-- WE BUILD A MORE COMPLEX MODEL --
+We can build a more complex neuron that can model OR, AND, XOR logic gate behavior
+
+We implement main.c into gates.c, adding another dataset x2 and updating our code as necessary
+
+To aid the performance of the model, we can implement an activation function, the simplest being a sigmoid function 
+
+The problem of how to minimize cost function and optimize model is where lots of juicy maths and research revolves around
+
+While testing the performance of our OR gates model we saw that it was performing poorly without a bias.
+
+By adding a bias to our cost function we saw increased performance, by almost two magnitudes.
+
+It still requires a lot of training, but for the same amount of training cycles adding bias drastically improved OR gate model 
+
